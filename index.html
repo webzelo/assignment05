@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="w-full">
     <nav class="flex items-center justify-between max-w-[1920px] mx-auto center">
@@ -38,5 +40,199 @@
             <p class="text-center p-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
+    <!--main-->
+    <section class="max-w-[1920px] mx-auto">
+        <div class="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+<!--National Emergency Service-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">National Emergency Number</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">National Emergency</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">999</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">All</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Police Helpline Number-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/police.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Police Helpline Number</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Police</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">999</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Police</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Fire Service Number-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/fire-service.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Fire Service Number</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Fire Service</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">999</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Fire</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Ambulance Service-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/ambulance.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Ambulance Service</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Ambulance</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">1994-999999</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Health</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Women & Child Helpline-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Women & Child Helpline</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Women & Child Helpline</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">109</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Help</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Anti-Corruption Helpline-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Anti-Corruption Helpline</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Anti-Corruption</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">106</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Govt.</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Electricity Helpline-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Electricity Helpline</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Electricity Outage</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">16216</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Electricity</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Electricity
+                    </button>
+                </div>
+            </div>
+<!--Brac Helpline-->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Brac Helpline</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Brac</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">16445</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">NGO</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+<!--Bangladesh Railway Helpline -->
+            <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
+                <div class="flex items-center justify-between">
+                    <img class="h-10 bg-[#FFE3E2] p-2 rounded-xl" src="assets/emergency.png" alt="">
+                    <p class="text-lg">
+                        <i class="fa-regular fa-heart heart-btn p-2"></i>
+                    </p>
+                </div>
+                <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">Bangladesh Railway Helpline</h2>
+                <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Bangladesh Railway</p>
+                <p id="NationalEmergency" class="text-xl font-bold pt-2 service-number">163</p>
+                <span class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">Travel</span>
+                <div class="flex items-center gap-2 mt-2 text-lg">
+                    <button id="copy-button-national" class="copy-button">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button id="call-button-national" class="call-button">
+                        <i class="fa-solid fa-phone"></i> Call
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
