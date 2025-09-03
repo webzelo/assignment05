@@ -22,3 +22,15 @@ for (const heart of hearts) {
 
      }); 
 }
+
+//copy button
+const copybtn = document.querySelectorAll(".copy-button"); 
+const copyCount = document.getElementById("copy-count"); 
+let copyCounter = 0; 
+
+copybtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        copyCounter++; 
+        copyCount.textContent = copyCounter; 
+    }); 
+}); 
