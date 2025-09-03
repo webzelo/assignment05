@@ -1,12 +1,12 @@
 // Heart Button
-const hearts = document.getElementsByClassName("heart-btn"); 
+const hearts = document.querySelectorAll(".heart-btn"); 
 const heartCountElement = document.getElementById("heart-count"); 
 console.log(heartCountElement)
 let heartCount = 0; 
 
 for (const heart of hearts) {
     heart.addEventListener("click", function () {
-        /*if(heart.classList.contains("fa-regular")){
+        if(heart.classList.contains("fa-regular")){
             heart.classList.remove("fa-regular");
             heart.classList.add("fa-solid", "text-red-500"); 
             heartCount++; 
@@ -15,7 +15,7 @@ for (const heart of hearts) {
             heart.classList.add("fa-regular"); 
             heartCount--; 
         }
-        heartCountElement.innerText = heartCount; */
+        heartCountElement.innerText = heartCount; 
         console.log("click")
         heartCount++; 
         heartCountElement.innerText = heartCount; 
@@ -34,3 +34,20 @@ copybtn.forEach((btn) => {
         copyCount.textContent = copyCounter; 
     }); 
 }); 
+
+//coin button
+const callbtn = document.querySelectorAll("call-button"); 
+const coinCount = document.getElementById("coin-count"); 
+
+callbtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        let coins = parseInt(cointCount.textContent); 
+
+        if (coins >= 20) {
+            coins -= 20; 
+            coinCount.textContent = coins; 
+        } else{
+            alert("!You Need 20 Coin For A Call");
+        }
+    });
+});
