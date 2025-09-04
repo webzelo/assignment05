@@ -41,7 +41,7 @@ const coinCount = document.getElementById("coin-count");
 
 callbtn.forEach((btn) => {
     btn.addEventListener("click", () => {
-        let coins = parseInt(cointCount.textContent); 
+        let coins = parseInt(coinCount.textContent); 
 
         if (coins >= 20) {
             coins -= 20; 
