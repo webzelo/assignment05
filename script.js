@@ -36,7 +36,7 @@ copybtn.forEach((btn) => {
 }); 
 
 //coin button
-const callbtn = document.querySelectorAll("call-button"); 
+const callbtn = document.querySelectorAll(".call-button"); 
 const coinCount = document.getElementById("coin-count"); 
 
 callbtn.forEach((btn) => {
@@ -51,3 +51,44 @@ callbtn.forEach((btn) => {
         }
     });
 });
+
+//start copy count section
+//reusable function
+
+function setupCopyButton(buttonId, textId) {
+    const button = document.getElementById(buttonId); 
+    const textElement = document.getElementById(textId); 
+
+    if(button && textElement) {
+        button.addEventListener("click", () => {
+            const textToCopy = textElement.innerText; 
+            navigator.clipboard
+                .writeText(textToCopy)
+                .then(() => {
+                    alert("Copied To Clipboard : " + textToCopy); 
+                })
+                .catch((err) => {
+                    console.error("Failed To Copy: ", err); 
+                })
+        })
+    }
+}
+
+//List Of Buttons And Text Ids
+const copyMappings = [
+    ["copy-button-national", "NationalEmergency"], 
+    ["copy-button-police", "PoliceEmergency"], 
+    ["copy-button-fire", "FireEmergency"], 
+    ["copy-button-ambulance", "AmbulanceEmergency"], 
+    ["copy-button-women-child", "WomenChildEmergency"], 
+    ["copy-button-anti-corruption", "AntiCorruptionEmergency"], 
+    ["copy-button-electricity", "ElectricityEmergency"], 
+    ["copy-button-brac", "BracEmergency"], 
+    ["copy-button-bangladesh-railway", "BangladeshRailwayEmergency"], 
+    ["copy-button-police", "PoliceEmergency"], 
+    ["copy-button-police", "PoliceEmergency"], 
+]; 
+
+//Loop Through Mappings
+copyMappings.forEach(([btnId, textId]) => setupCopyButton(btnId, textId)); 
+
