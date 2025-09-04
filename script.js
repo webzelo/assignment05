@@ -125,3 +125,9 @@ for(const btn of callButtons) {
         callHistoryContainer.appendChild(historyItem); 
     });
 }
+
+//Clear History
+const clearHistory = document.getElementById("clear-history-btn"); 
+clearHistory.addEventListener("click", function () {
+    callHistoryContainer.innerHTML = ""; 
+});
